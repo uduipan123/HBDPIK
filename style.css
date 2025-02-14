@@ -1,0 +1,75 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f6f2;
+    background-image: url(img/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Title */
+.title {
+    font-size: 3rem;
+    color: #f59e42;
+    margin-bottom: 20px;
+}
+
+/* Birthday message */
+.message {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Balloons images */
+.balloons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.balloon {
+    width: 100px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+.footer {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 20px;
+}
